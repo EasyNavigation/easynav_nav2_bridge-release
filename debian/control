@@ -1,0 +1,12 @@
+Source: ros-humble-easynav-nav2-bridge
+Section: misc
+Priority: optional
+Maintainer: "Francisco Martín Rico" <fmrico@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), ros-humble-action-msgs <!nocheck>, ros-humble-ament-cmake, ros-humble-ament-cmake-gtest <!nocheck>, ros-humble-ament-lint-auto <!nocheck>, ros-humble-ament-lint-common <!nocheck>, ros-humble-easynav-common <!nocheck>, ros-humble-easynav-interfaces, ros-humble-easynav-system, ros-humble-geometry-msgs, ros-humble-nav-msgs <!nocheck>, ros-humble-nav2-msgs, ros-humble-rclcpp, ros-humble-rclcpp-action, ros-humble-rclcpp-lifecycle <!nocheck>, ros-humble-ros-workspace
+Homepage: https://index.ros.org/p/easynav_nav2_bridge/#humble
+Standards-Version: 3.9.2
+
+Package: ros-humble-easynav-nav2-bridge
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, ros-humble-easynav-interfaces, ros-humble-easynav-system, ros-humble-geometry-msgs, ros-humble-nav2-msgs, ros-humble-rclcpp, ros-humble-rclcpp-action, ros-humble-ros-workspace
+Description: Easy Navigation: Nav2 bridge exposing a nav2_msgs/action/NavigateToPose action server backed by EasyNav.
